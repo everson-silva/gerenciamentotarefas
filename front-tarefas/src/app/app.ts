@@ -1,11 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormTarefasComponent } from './components/form-tarefas/form-tarefas.component';
+import { ListaTarefasComponent } from './components/lista-tarefas/lista-tarefas.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [FormTarefasComponent, ListaTarefasComponent],
+  templateUrl: './app.html'
 })
 export class App {
-  protected readonly title = signal('front-tarefas');
+  title = 'Front Tarefas';
 }
