@@ -1,0 +1,34 @@
+# ==========================
+# Back-end (.NET Core / C#)
+# ==========================
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+appsettings.Development.json
+
+# ==========================
+# Front-end (Node / Angular)
+# ==========================
+node_modules/
+dist/
+.angular/
+out-tsc/
+.npm/
+
+# ==========================
+# Arquivos de Sistema (OS)
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Docker & Environment
+# ==========================
+.env
+.env.local
+.env.*.local
+.docker/
+**/db-data/
+**/sql-data/
+docker-compose.override.yml
